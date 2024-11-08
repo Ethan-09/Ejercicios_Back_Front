@@ -1,0 +1,56 @@
+.form-container {
+  border: 2px solid #ffffff;
+  /* Bordes del cuadro */
+  padding: 20px;
+  /* Espacio dentro del cuadro */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  width: 300px;
+  /* Ancho del cuadro */
+  margin: 0 auto;
+  /* Centrar el cuadro */
+  background-color: #fff6d8;
+  /* Fondo del cuadro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad */
+}
+body {
+  /* background-color: #ffffff; */
+  background-image: linear-gradient(to left, #fffde8, #fdeba9);
+  /* Color de fondo */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  /* Cambia el estilo de fuente si lo deseas */
+  margin: 0;
+  padding: 0;
+}
+.patient-card {
+  border: 1px solid #ccc;
+  /* Borde del cuadro */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  padding: 15px;
+  /* Espacio interno */
+  margin: 10px 0;
+  /* Espacio entre cada cuadro */
+  background-color: #fff2b8;
+  /* Fondo del cuadro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra para profundidad */
+  list-style-type: none;
+  /* Elimina el estilo de lista */
+}
+.title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    /* Cambia 'Arial' por el tipo de letra que prefieras */
+    color: #4c3500;
+    /* Cambia #333333 por el color que desees */
+    font-size: 20px;
+    /* Ajusta el tamaño de la fuente si es necesario */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Cambia el texto a mayúsculas */
+    text-align: center;
+    /* Centra el texto */
+    text-decoration: underline;
+  
+}
