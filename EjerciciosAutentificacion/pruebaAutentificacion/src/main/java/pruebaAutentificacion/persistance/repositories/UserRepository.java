@@ -5,4 +5,5 @@ import pruebaAutentificacion.persistance.entities.User;
 
 public interface UserRepository extends JpaRepository<User,Integer> {
     User findByUserName(String username);
+    User findUserById(Integer id);
 }

@@ -1,0 +1,1 @@
+npm create vite .   <--- crear un proyecto nuevo de React, en consola

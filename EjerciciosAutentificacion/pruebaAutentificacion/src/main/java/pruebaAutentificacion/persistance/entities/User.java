@@ -3,14 +3,10 @@ package pruebaAutentificacion.persistance.entities;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,9 +25,20 @@ public class User implements UserDetails {
     private boolean credentialsNonExpired;
     private boolean enabled;
 
+    @ManyToOne
+    @JoinColumn(name = "message_id")
+    private Message message;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id_sender")
+    private User userSender;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id_receiver")
+    private User userReceiver;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Devolvemos un ArrayList vacío porque nuestra app no tiene roles
         return new ArrayList<>();
     }
 
