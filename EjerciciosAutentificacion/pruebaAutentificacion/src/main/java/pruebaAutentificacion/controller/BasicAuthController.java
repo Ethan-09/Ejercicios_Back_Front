@@ -2,7 +2,6 @@ package pruebaAutentificacion.controller;
 
 import java.security.Principal;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +13,7 @@ public class BasicAuthController {
 
     @PostMapping(path = "/login")
     public ResponseEntity<String> basicauth(Principal principal) {
-        return ResponseEntity.ok().body("{\"resp\":\"ok\"}");
+        return ResponseEntity.ok().body("{\"resp\":\"ok\",\"id\":1}");
     }
 
 }

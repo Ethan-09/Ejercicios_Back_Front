@@ -40,8 +40,8 @@ public class Message {
         this.userSender = userSender;
     }
 
-    public User getUserReceiver() {
-        return userReceiver;
+    public User getUserReceiver(User userReceiver) {
+        return this.userReceiver;
     }
 
     public void setUserReceiver(User userReceiver) {

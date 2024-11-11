@@ -16,11 +16,15 @@ export const login = async (username, password) => {
     });
     console.log(response.data,'11111111')
     if(response.data.resp === "ok"){
-      alert("Test es bien, parece :)")
       setAuth(token);
-      return token;
+      return {id:response.data.id};
     }
     return null;
+}
+
+export const getMessages = async(id)=>{
+  const response = await i.get('/'+id)
+  
 }
 
 
